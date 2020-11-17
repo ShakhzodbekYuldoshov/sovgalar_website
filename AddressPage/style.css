@@ -1,0 +1,30 @@
+.gridBox {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 50px;
+}
+
+.block {
+    display: block;
+}
+
+.fa-map-marker {
+    font-size: 120px;
+    color: #e9357c;
+    margin: 0 auto;
+}
+
+.gridBox a:hover .fa, .gridBox a:hover  {
+    color: #e9357c;
+}
+
+@media screen and (max-width: 650px) {
+    .gridBox {
+        grid-template-columns: 1fr;
+        grid-gap: 15px;
+    }
+
+    .fa-map-marker {
+        display: none;
+    }
+}
